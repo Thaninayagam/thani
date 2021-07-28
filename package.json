@@ -1,0 +1,20 @@
+{
+  "name": "thani",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.0.5",
+    "vue-router": "^4.0.10"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.2.5",
+    "@vue/cli-plugin-router": "^4.5.13",
+    "@vue/cli-service": "^4.5.13",
+    "@vue/compiler-sfc": "^3.0.5",
+    "vite": "^2.4.3"
+  }
+}
