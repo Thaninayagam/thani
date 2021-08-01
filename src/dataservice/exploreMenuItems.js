@@ -1,7 +1,15 @@
 
-const exploremenue=[
+const prortfolios=[
     {
-        explorename:'Portfolo',
-        explorepath:''
-    }
-]
+        urls:'/src/assets/sites/app_thubm.png',
+        projectTitle:'E-Commerce Website',
+        projectDesc:'Website built with Codeigniter 4'
+    },
+    {
+        urls:'/src/assets/sites/app_thubm.png',
+        projectTitle:'E-Commerce Website',
+        projectDesc:'Website built with Codeigniter 4'
+    },
+];
+
+export default prortfolios;

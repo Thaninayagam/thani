@@ -1,20 +1,24 @@
 <template>
   <div className="cardContainer">
       <div className="cardImageHolder">
-         <img src="../assets/sites/app_thubm.png" alt="">
+         <img :src="srca" alt="">
       </div>
       <div className="cardContents">
-          <h2>E-Commerce Store</h2>
-          <p>Full Fledge Ecommerce Website</p>
+          <h2>{{projectTitle}}</h2>
+          <p>{{projectDesc}}</p>
           <button className="btn">View More</button>
       </div>
   </div>
 </template>
 
-<script>
-export default {
+<script setup>
 
-}
+defineProps({
+    srca:String,
+    projectTitle:String,
+    projectDesc:String
+})
+
 </script>
 
 <style>
@@ -46,7 +50,7 @@ export default {
     border-right: solid 5px var(--primarycolor);
 }
 .cardImageHolder img{
-    object-fit: cover;
+    object-fit: contain;
     width: 100%;
 }
 
