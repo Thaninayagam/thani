@@ -23,7 +23,7 @@ import Backbutton from '../components/Backbutton.vue';
 
 import ExploreBtns from '../components/ExploreBtns.vue';
 
-console.log(ExploreBtns);
+//console.log(ExploreBtns);
 
 export default {
   components: {

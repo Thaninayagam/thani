@@ -18,7 +18,7 @@ import router from "./router/index"
 
 
   let routes=router.getRoutes();
-  console.log(routes);
+  //console.log(routes);
 
 
 

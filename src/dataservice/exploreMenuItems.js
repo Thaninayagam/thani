@@ -7,7 +7,7 @@ const prortfolios=[
     },
     {
         urls:'/src/assets/sites/app_thubm.png',
-        projectTitle:'E-Commerce Website',
+        projectTitle:'Printing Shop',
         projectDesc:'Website built with Codeigniter 4'
     },
 ];

@@ -6,18 +6,68 @@
       <div className="cardContents">
           <h2>{{projectTitle}}</h2>
           <p>{{projectDesc}}</p>
-          <button className="btn">View More</button>
+          <button id="ddsa" className="btn" v-on:click="da()" >View More</button>
       </div>
+          <component v-bind:key="da2d" @close="jk = false"  v-if="jk" :titileofheader="projectTitle" :smalldesca="projectDesc" :is="da()"/>
   </div>
 </template>
 
-<script setup>
+<script>
 
-defineProps({
-    srca:String,
-    projectTitle:String,
-    projectDesc:String
-})
+
+import FloatingSideDetailedBar from '../components/FloatingSideDetailedBar.vue'
+
+export default{
+    props:['da2d','projectTitle','projectDesc'],
+    components:{
+        FloatingSideDetailedBar,
+    },
+    props:{
+        srca:String,
+        projectTitle:String,
+        projectDesc:String
+    },
+        data(){
+      return{
+        styleObject:{
+          display:'none'
+        },
+        jk:false,
+        
+      }
+    },
+   
+    methods:{
+
+              da(){
+                //console.log(projctTitle);
+                this.jk=true;
+                const fd= FloatingSideDetailedBar;
+               // fd.titileofheader=projectTitle;
+                
+                return fd;
+      }
+
+
+    },
+    computed:{
+        
+    }
+
+
+
+
+
+}
+
+
+// data(){
+//     publicPath: process.env.BASE_URL
+// }
+
+
+
+
 
 </script>
 
