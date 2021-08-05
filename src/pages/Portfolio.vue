@@ -6,7 +6,16 @@
     <h1>Portfolio</h1>
     <div className="cards">
         
-        <PortfolioCard v-for="(port,index) in orid" :da2d="index" v-bind:key="index" v-bind:srca="port.urls" v-bind:projectTitle="port.projectTitle" v-bind:projectDesc="port.projectDesc"/>
+        <PortfolioCard 
+        v-for="(port,index) in orid" 
+        :da2d="index" 
+        v-bind:key="index" 
+        v-bind:srca="port.urls" 
+        v-bind:projectTitle="port.projectTitle" 
+        v-bind:projectDesc="port.projectDesc"
+        v-bind:projectSiteLinkd="port.projectSiteLink"
+        
+        />
         
 
 <!-- <slot v-if="jk">

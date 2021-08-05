@@ -1,20 +1,24 @@
 <template>
-<transition name="modal">
-  <div class="modal-mask" @click="$emit('close')">
-  <div v-if="!showhides" class="modal portDetailContainer modal-container">
-    <div class="portdetails">
-      <button class="closeBtn" id="daas" @click="$emit('close')">x</button>
-      <h1>{{titileofheadera}}</h1>
-      <h4>{{smalldesc}}</h4>
-      <div class="sideBody">
-        <p>
-          This si what
+  <transition name="modal">
+    <div class="modal-mask">
+      <div v-if="!showhides" class="modal portDetailContainer modal-container">
+        <div class="portdetails">
+          <button class="closeBtn" id="daas" @click="$emit('close')">x</button>
+          <h1>{{titileofheadera}}</h1>
+          <h4>{{smalldesc}}</h4>
+          <div class="sideBody">
+            <p>
+              This si what
 
-        </p>
+            </p>
+            <div>
+              <h2>Site Links</h2>
+              <h3><a :href="projectSiteLinkaa">{{projectSiteLinkaa}}</a></h3>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  </div>
   </transition>
 </template>
 
@@ -23,13 +27,15 @@
     props:{
       showhide:Boolean,
       titileofheader:String,
-      smalldesca:String
+      smalldesca:String,
+      projectSiteLinka:String
     },
     data(){
       return{
         showhides:this.showhide,
         titileofheadera:this.titileofheader,
-        smalldesc:this.smalldesca
+        smalldesc:this.smalldesca,
+        projectSiteLinkaa:this.projectSiteLinka
       }
     },
 
@@ -69,7 +75,7 @@
 }
 
 .modal-container {
-  width: 300px;
+  width: 50vw;
   margin: 0px auto;
   padding: 20px 30px;
   background-color: #fff;

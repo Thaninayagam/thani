@@ -8,7 +8,14 @@
           <p>{{projectDesc}}</p>
           <button id="ddsa" className="btn" v-on:click="da()" >View More</button>
       </div>
-          <component v-bind:key="da2d" @close="jk = false"  v-if="jk" :titileofheader="projectTitle" :smalldesca="projectDesc" :is="da()"/>
+          <component 
+            v-bind:key="da2d" 
+            @close="jk = false"  
+            v-if="jk" 
+            :titileofheader="projectTitle" 
+            :smalldesca="projectDesc"
+            :projectSiteLinka="projectSiteLinkda"
+            :is="da()"/>
   </div>
 </template>
 
@@ -25,7 +32,8 @@ export default{
     props:{
         srca:String,
         projectTitle:String,
-        projectDesc:String
+        projectDesc:String,
+        projectSiteLinkd:String
     },
         data(){
       return{
@@ -33,7 +41,7 @@ export default{
           display:'none'
         },
         jk:false,
-        
+        projectSiteLinkda:this.projectSiteLinkd
       }
     },
    

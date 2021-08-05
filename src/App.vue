@@ -35,14 +35,11 @@ import router from "./router/index"
     --primarycolor:rgb(27, 171, 238);
     --primarycolorDarkVarient:rgb(18, 106, 146);    
     --primaryBackgorundActive:rgb(1, 63, 130);
-    --primaryBackgorundColor:rgb(255, 255, 255);
-
-    
+    --primaryBackgorundColor:rgb(255, 255, 255);    
 }
 
 h1{
-    color: var(--primarycolor);
-    
+    color: var(--primarycolor);    
 }
 
 p{
@@ -55,14 +52,12 @@ p{
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-
 }
 
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  
+  box-sizing: border-box;  
 }
 
 .backgroundholder{
@@ -86,16 +81,11 @@ p{
     justify-content: space-between;
     align-items: center;
     margin-top: 55px;
-
-    
-
 }
+
 .backgroundholder :nth-child(1) {    
     animation: fadein 0.6s;
 }
-
-
-
 
 @keyframes bounce-in {
   0% {
@@ -124,9 +114,9 @@ p{
   }
 }
 
-@media screen and (min-width: 500px) {
-  .container {
-     
+@media screen and (max-width: 500px) {
+  .modal-container {
+     width: 90vw;
   }
 }
 
