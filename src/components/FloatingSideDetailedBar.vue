@@ -76,6 +76,7 @@
 
 .modal-container {
   width: 50vw;
+  height: 100%;
   margin: 0px auto;
   padding: 20px 30px;
   background-color: #fff;
@@ -83,6 +84,9 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
   transition: all 0.3s ease;
   font-family: Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .modal-header h3 {
@@ -133,7 +137,10 @@
   font-size: 1.5em;
 
   cursor: pointer;
-  
+  position: relative;
+  top: 0px;
+  right: 0px;
+
 }
 .closeBtn:hover{
   background: rgb(158, 16, 16);

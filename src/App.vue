@@ -4,16 +4,17 @@
    <router-link :to="item.path">{{ item.name }}</router-link> 
   </li> -->
 
-    <div className="backgroundholder">
+    <SubviewPage>
       
       <router-view></router-view>
 
-    </div>  
+    </SubviewPage> 
 
 </template>
 
 <script setup>
 import { computed, onMounted } from "@vue/runtime-core"
+import SubviewPage from './templates/SubviewPage.vue'
 import router from "./router/index"
 
 
